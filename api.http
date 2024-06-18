@@ -1,0 +1,30 @@
+###
+GET http://localhost:3000/events
+
+###
+POST http://localhost:3000/events
+Content-Type: application/json
+
+{
+ "name": "New Event",
+ "description":"This is a new event",
+ "date":"2017-01-01T00:00:00",
+ "price": 100
+}
+
+###
+GET http://localhost:3000/events/id
+
+###
+PATCH http://localhost:3000/events/2442d57a-4612-4d02-a706-cd850cf9b4ec
+Content-Type: application/json
+
+{
+ "name": "New Event Update",
+ "description":"This is a new event",
+ "date":"2017-01-01T00:00:00",
+ "price": 100
+}
+
+###
+DELETE http://localhost:3000/events/2442d57a-4612-4d02-a706-cd850cf9b4ec
